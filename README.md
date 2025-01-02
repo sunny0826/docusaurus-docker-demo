@@ -43,6 +43,12 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 
 ### Docker
 
+build:
+```bash
+docker build --target <target> -t <tag> .
+```
+- `--target`: `dev` or `serve`
+
 dev:
 ```bash
 docker run --rm -d -p 3000:3000 -v $(pwd):/opt/docusaurus <tag>
