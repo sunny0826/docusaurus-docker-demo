@@ -49,6 +49,10 @@ docker build --target <target> -t <tag> .
 ```
 - `--target`: `dev` or `serve`
 
+```bash
+docker buildx build --platform linux/amd64 --target <target> -t <tag> .
+```
+
 dev:
 ```bash
 docker run --rm -d -p 3000:3000 -v $(pwd):/opt/docusaurus <tag>
